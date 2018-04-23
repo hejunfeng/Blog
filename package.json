@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejunfeng/Blog.git"
+  },
+  "author": "kaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hejunfeng/Blog/issues"
+  },
+  "homepage": "https://github.com/hejunfeng/Blog#readme"
+}
