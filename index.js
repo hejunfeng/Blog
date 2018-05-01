@@ -14,8 +14,6 @@ app.set('views', path.join(__dirname, 'views'))
 // 设置模板引擎为 ejs
 app.set('view engine', 'ejs')
 
-
-
 // 设置静态文件目录
 app.use(express.static(path.join(__dirname, 'public')))
 // session 中间件
@@ -34,6 +32,12 @@ app.use(session({
 
 // flash 中间件，用来显示通知
 app.use(flash())
+
+// 处理表单及文件上传的中间件
+app.use(require('express-formidable')({
+  uploadDir: path.join(__dirname, 'public/img'), // 上传文件目录
+  keepExtensions: true// 保留后缀
+}))
 
 // 设置模板全局常量
 app.locals.blog = {
